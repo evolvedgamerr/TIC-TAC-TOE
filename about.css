@@ -1,0 +1,115 @@
+/* General Styling */
+body {
+    font-family: 'Press Start 2P', cursive;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #0c0c0c;
+    color: white;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    overflow: hidden;
+  }
+  
+  #background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: opacity(0.5); /* Adjust opacity as needed */
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Overlay to add darkness */
+    z-index: 1;
+  }
+  
+  .game-container,
+  .content-container {
+    text-align: center;
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto;
+    z-index: 2; /* Ensure the container is above the video */
+  }
+  
+  h1 {
+    color: #00ff00;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px #00ff00;
+    position: relative;
+    animation: glow 2s infinite alternate;
+  }
+  
+  @keyframes glow {
+    0% {
+      text-shadow: 0 0 10px #00ff00, 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
+    }
+    100% {
+      text-shadow: 0 0 20px #ff00ff, 0 0 30px #ff00ff, 0 0 40px #ff00ff, 0 0 50px #ff00ff;
+    }
+  }
+  
+  button,
+  .nav-link {
+    margin: 10px 5px;
+    padding: 15px 30px;
+    font-size: 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: #222;
+    color: white;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  button:hover,
+  .nav-link:hover {
+    background-color: #333;
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #00ff00, 0 0 30px #00ff00, 0 0 45px #00ff00;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  /* Game Grid */
+  .game-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 20px auto;
+  }
+  
+  .cell {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background: rgba(26, 26, 26, 0.6);
+    border: 2px solid #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem;
+    color: #00ff00;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 20[_{{{CITATION{{{_1{](https://github.com/arnellebalane/tictactoe/tree/87919cc0cfc222cd42fd4d0eded33d11080ba34a/index.php)[_{{{CITATION{{{_2{](https://github.com/Lekgala/news-website/tree/9d21966de270f7e0de081782b8cfb77ad244b8aa/About.php)[_{{{CITATION{{{_3{](https://github.com/etienne-hr/poke-api/tree/2daaa9b7b81a1b8d30e26664dbedf1ae25c5ba66/index.php)

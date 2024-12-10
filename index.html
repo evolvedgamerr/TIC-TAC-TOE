@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tic-Tac-Soul</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Background Video -->
+  <div class="video-container">
+    <video autoplay muted loop id="background-video">
+      <source src="bg.mp4" type="video/mp4">
+      
+    </video>
+    <div class="overlay"></div>
+  </div>
+
+  <div class="game-container">
+    <h1>Tic-Tac-Soul</h1>
+    
+    <!-- Mode Selector -->
+    <div class="mode-selection">
+      <button id="mode-human-vs-human">Human vs Human</button>
+      <button id="mode-human-vs-computer">Human vs Computer</button>
+    </div>
+    
+    <!-- Difficulty Selector (for Computer) -->
+    <div class="difficulty-selection hidden">
+      <button id="normal-mode">Normal</button>
+      <button id="moderate-mode">Moderate</button>
+      <button id="tough-mode">Tough</button>
+    </div>
+    
+    <!-- Game Grid -->
+    <div class="game-grid">
+      <div class="cell" data-index="0"></div>
+      <div class="cell" data-index="1"></div>
+      <div class="cell" data-index="2"></div>
+      <div class="cell" data-index="3"></div>
+      <div class="cell" data-index="4"></div>
+      <div class="cell" data-index="5"></div>
+      <div class="cell" data-index="6"></div>
+      <div class="cell" data-index="7"></div>
+      <div class="cell" data-index="8"></div>
+    </div>
+
+    <button id="reset-btn" class="hidden">Reset</button>
+    <p id="status">Choose a mode to start!</p>
+    <p><a href="about.html">About Us</a></p>
+
+
+
+    <!-- Mute/Unmute Button -->
+    <div class="controls">
+      <button id="mute-btn">Mute Music</button>
+    </div>
+  </div>
+
+  <audio id="keypress-sound" src="keypress.mp3"></audio>
+  <audio id="start-sound" src="start.mp3"></audio>
+  <audio id="win-sound" src="win.mp3"></audio>
+  <audio id="tie-sound" src="tie.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
